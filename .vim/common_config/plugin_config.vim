@@ -3,6 +3,7 @@
 
 " Plugins requiring no additional configuration or keymaps
   Bundle "git://github.com/oscarh/vimerl.git"
+  Bundle "git://github.com/terryma/vim-multiple-cursors.git"
   Bundle "git://github.com/tpope/vim-git.git"
   Bundle "git://github.com/harleypig/vcscommand.vim.git"
   Bundle "git://github.com/altercation/vim-colors-solarized.git"
@@ -24,9 +25,6 @@
   Bundle "git://github.com/vim-scripts/ruby-matchit.git"
   Bundle "git://github.com/wgibbs/vim-irblack.git"
   Bundle "git://github.com/wavded/vim-stylus.git"
-  " Bundle git://github.com/skammer/vim-css-color.git
-  " Use Aaron Baker's Fork to add SASS/SCSS color highlighting
-  Bundle "git@github.com:bakis2011/vim-css-color.git"
 
 " CtrlP - with FuzzyFinder compatible keymaps
   Bundle "git://github.com/kien/ctrlp.vim.git"
@@ -77,44 +75,11 @@
     au BufNewFile,BufRead *.coffee set filetype=coffee
 
 
-" ACK
-" Bundle "git://github.com/mileszs/ack.vim.git"
-"   nmap g/ :Ack!<space>
-"   nmap g* :Ack! -w <C-R><C-W><space>
-"   nmap ga :AckAdd!<space>
-"   nmap gn :cnext<CR>
-"   nmap gp :cprev<CR>
-"   nmap gq :ccl<CR>
-"   nmap gl :cwindow<CR>
-
-" AG aka The Silver Searcher
-  Bundle 'git://github.com/rking/ag.vim.git'
-    nmap g/ :Ag!<space>
-    nmap g* :Ag! -w <C-R><C-W><space>
-    nmap ga :AgAdd!<space>
-    nmap gn :cnext<CR>
-    nmap gp :cprev<CR>
-    nmap gq :ccl<CR>
-    nmap gl :cwindow<CR>
-
-
 " Tagbar for navigation by tags using CTags
   Bundle "git://github.com/majutsushi/tagbar.git"
     let g:tagbar_autofocus = 1
     map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
     map <Leader>. :TagbarToggle<CR>
-
-
-" Ruby focused unit test (wrapped in an if-loaded because it doesn't like
-" being loaded twice)
-  if !exists(':RunRubyFocusedUnitTest')
-    Bundle "git://github.com/drewolson/ruby_focused_unit_test_vim.git"
-      nmap <Leader>ra :wa<CR> :RunAllRubyTests<CR>
-      nmap <Leader>rc :wa<CR> :RunRubyFocusedContext<CR>
-      nmap <Leader>rf :wa<CR> :RunRubyFocusedUnitTest<CR>
-      nmap <Leader>rl :wa<CR> :RunLastRubyTest<CR>
-  endif
-
 
 " Markdown syntax highlighting
   Bundle "git://github.com/tpope/vim-markdown.git"
@@ -124,11 +89,9 @@
       autocmd BufNewFile,BufRead *.markdown set ai formatoptions=tcroqn2 comments=n:> filetype=markdown
     augroup END
 
-
 " Markdown preview to quickly preview markdown files
   Bundle "git://github.com/maba/vim-markdown-preview.git"
   map <buffer> <Leader>mp :Mm<CR>
-
 
 " NERDTree for project drawer
   Bundle "git://github.com/scrooloose/nerdtree.git"
@@ -136,7 +99,6 @@
 
     nmap gt :NERDTreeToggle<CR>
     nmap g :NERDTree \| NERDTreeToggle \| NERDTreeFind<CR>
-
 
 " Tabular for aligning text
   Bundle "git://github.com/godlygeek/tabular.git"
@@ -177,40 +139,15 @@
   Bundle "git://github.com/scrooloose/syntastic.git"
     let g:syntastic_enable_signs=1
     let g:syntastic_quiet_warnings=1
-    " syntastic is too slow for haml and sass
+    let g:syntastic_delayed_redraws=1
+" syntastic is too slow for haml and sass
     let g:syntastic_mode_map = { 'mode': 'active',
                                \ 'active_filetypes': [],
                                \ 'passive_filetypes': ['haml','scss','sass'] }
 
-
-" gist-vim for quickly creating gists
-  Bundle "git://github.com/mattn/webapi-vim.git"
-  Bundle "git://github.com/mattn/gist-vim.git"
-    if has("mac")
-      let g:gist_clip_command = 'pbcopy'
-    elseif has("unix")
-      let g:gist_clip_command = 'xclip -selection clipboard'
-    endif
-
-    let g:gist_detect_filetype = 1
-    let g:gist_open_browser_after_post = 1
-
-
 " gundo for awesome undo tree visualization
   Bundle "git://github.com/sjl/gundo.vim.git"
     map <Leader>h :GundoToggle<CR>
-
-
-" rails.vim, nuff' said
-  Bundle "git://github.com/tpope/vim-rails.git"
-    map <Leader>oc :Rcontroller<Space>
-    map <Leader>ov :Rview<Space>
-    map <Leader>om :Rmodel<Space>
-    map <Leader>oh :Rhelper<Space>
-    map <Leader>oj :Rjavascript<Space>
-    map <Leader>os :Rstylesheet<Space>
-    map <Leader>oi :Rintegration<Space>
-
 
 " surround for adding surround 'physics'
   Bundle "git://github.com/tpope/vim-surround.git"
@@ -225,7 +162,10 @@
   Bundle "https://github.com/vim-scripts/VimClojure.git"
   autocmd BufNewFile,BufRead *.clj set filetype=clojure
 
-
 " Jade Highlighting"
   Bundle "git://github.com/digitaltoad/vim-jade.git"
   autocmd BufNewFile,BufRead *.jade set filetype=jade
+
+" Elm is Haskell
+  Bundle "git://github.com/lambdatoast/elm.vim"
+  au BufRead,BufNewFile *.elm set ft=elm

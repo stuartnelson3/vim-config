@@ -9,19 +9,16 @@ runtime! custom_config/*.vim
 color quercus
 set cursorline
 
+set listchars=trail:.
+set rnu
+set nonumber
+au FileType go,c,cpp setl ts=4 sw=4
+
+" auto resize focused window
+let &winheight = &lines * 7 / 10
+let &winwidth = &columns * 6 / 10
+
+map <leader>r :ClearCtrlPCache<cr>
+
 " for git, add spell checking and automatic wrapping at 72 columns
 autocmd Filetype gitcommit setlocal spell textwidth=72
-
-" Strip trailing whitespace
-function! <SID>StripTrailingWhitespaces()
-  let _s=@/
-  let l = line(".")
-  let c = col(".")
-  %s/\s\+$//e
-  let @/=_s
-  call cursor(l, c)
-endfunction
-set wrap
-
-" Run before every buffer write
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
