@@ -9,13 +9,14 @@ runtime! custom_config/*.vim
 color quercus
 set cursorline
 
-set listchars=trail:.
+set nohlsearch
+set listchars=trail:.,tab:^~
 set rnu
 set nonumber
 au FileType go,c,cpp setl ts=4 sw=4
 
 " auto resize focused window
-let &winheight = &lines * 7 / 10
+let &winheight = &lines * 6 / 10
 let &winwidth = &columns * 6 / 10
 
 map <leader>r :ClearCtrlPCache<cr>
