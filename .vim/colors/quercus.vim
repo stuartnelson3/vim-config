@@ -19,9 +19,9 @@ hi ModeMsg guibg=#afafaf ctermbg=145
 hi Visual guibg=#afafaf guifg=#121212 ctermbg=145 ctermfg=233
 
 " bernhardt
-hi VertSplit guibg=#1c1c1c guifg=#000000 ctermbg=234 ctermfg=0
-hi StatusLine guibg=#1c1c1c guifg=#8a8a8a ctermbg=234 ctermfg=245
-hi StatusLineNC guibg=#1c1c1c guifg=#000000 ctermbg=234 ctermfg=0
+hi VertSplit guibg=#444444 guifg=#ffffff ctermbg=238 ctermfg=015
+hi StatusLine guibg=#585858 guifg=#ffffff ctermbg=240 ctermfg=015
+hi StatusLineNC guibg=#444444 guifg=#ffffff ctermbg=238 ctermfg=015
 " /bernhardt
 
 " had all ctermbg set to bg, couldn't figure out how to modify bg var
