@@ -9,7 +9,7 @@ let g:colors_name = "quercus"
 " hi LineNr  ctermbg=235
 
 " bernhardt
-hi Normal  guibg=#000000 ctermbg=16
+hi Normal  guibg=#000000 ctermbg=16 guifg=#afafaf ctermfg=145
 hi LineNr  guibg=#000000 guifg=#3d3d3d ctermbg=16
 hi NonText guibg=#000000 guifg=#000000 ctermbg=16 ctermfg=0
 hi CursorLine ctermbg=234 ctermfg=NONE guibg=#121212 guifg=NONE
