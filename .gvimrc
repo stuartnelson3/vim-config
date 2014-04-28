@@ -27,7 +27,8 @@
   endif
 
 " use a big, pretty font
-  set guifont=Inconsolata-dz:h14
+  " set guifont=Inconsolata-dz:h14
+  set guifont=Sauce\ Code\ Powerline:h14
   set lsp=-4
 
 " initial window size
