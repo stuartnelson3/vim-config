@@ -12,6 +12,7 @@ set cursorline
 set nohlsearch
 set history=10000
 set listchars=trail:.,tab:^~
+set nolist
 set rnu
 set nonumber
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'}]%h%m%r%y%=%c,%l/%L\ %P
