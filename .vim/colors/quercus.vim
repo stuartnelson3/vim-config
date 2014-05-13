@@ -35,6 +35,6 @@ hi Type        guibg=NONE ctermbg=NONE
 hi Statement   guibg=NONE ctermbg=NONE
 hi Keyword     guibg=NONE ctermbg=NONE
 hi Constant    guibg=NONE ctermbg=NONE
-hi Number      guibg=NONE ctermbg=NONE
+hi Number      guibg=NONE ctermbg=NONE ctermfg=208
 hi Special     guibg=NONE guifg=#008700 ctermbg=NONE ctermfg=28
 hi PreProc     guibg=NONE ctermbg=NONE
