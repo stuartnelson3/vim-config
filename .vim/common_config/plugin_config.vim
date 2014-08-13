@@ -18,7 +18,6 @@
   Bundle "git://github.com/ervandew/supertab.git"
   Bundle "git://github.com/tomtom/tcomment_vim.git"
   Bundle "git://github.com/michaeljsmith/vim-indent-object.git"
-  Bundle "git://github.com/tsaleh/vim-matchit.git"
   Bundle "git://github.com/kana/vim-textobj-user.git"
   Bundle "git://github.com/nelstrom/vim-textobj-rubyblock.git"
   Bundle "git://github.com/tpope/vim-repeat.git"
@@ -40,13 +39,8 @@
     " respect the .gitignore
     let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 
-" Compile and deploy Arduino (*.pde) sketches directly from Vim
-  Bundle "git://github.com/smerrill/vim-arduino.git"
-    au BufNewFile,BufRead *.pde set filetype=arduino
-    au BufNewFile,BufRead *.ino set filetype=arduino
-
 " Go
-  Bundle "git://github.com/jnwhiteh/vim-golang.git"
+  Bundle "git@github.com:fatih/vim-go.git"
     au BufNewFile,BufRead *.go set filetype=go
 
 " Mustache
@@ -100,30 +94,6 @@
     nmap gt :NERDTreeToggle<CR>
     nmap g :NERDTree \| NERDTreeToggle \| NERDTreeFind<CR>
 
-" Tabular for aligning text
-  Bundle "git://github.com/godlygeek/tabular.git"
-    function! CustomTabularPatterns()
-      if exists('g:tabular_loaded')
-        AddTabularPattern! symbols         / :/l0
-        AddTabularPattern! hash            /^[^>]*\zs=>/
-        AddTabularPattern! chunks          / \S\+/l0
-        AddTabularPattern! assignment      / = /l0
-        AddTabularPattern! comma           /^[^,]*,/l1
-        AddTabularPattern! colon           /:\zs /l0
-        AddTabularPattern! options_hashes  /:\w\+ =>/
-      endif
-    endfunction
-
-    autocmd VimEnter * call CustomTabularPatterns()
-
-    " shortcut to align text with Tabular
-    map <Leader>a :Tabularize<space>
-
-" ZoomWin to fullscreen a particular buffer without losing others
-  Bundle "git://github.com/vim-scripts/ZoomWin.git"
-    map <Leader>z :ZoomWin<CR>
-
-
 " Unimpaired for keymaps for quicky manipulating lines and files
   Bundle "git://github.com/tpope/vim-unimpaired.git"
     " Bubble single lines
@@ -134,7 +104,6 @@
     vmap <C-Up> [egv
     vmap <C-Down> ]egv
 
-
 " Syntastic for catching syntax errors on save
   Bundle "git://github.com/scrooloose/syntastic.git"
     let g:syntastic_enable_signs=1
@@ -144,10 +113,6 @@
     let g:syntastic_mode_map = { 'mode': 'active',
                                \ 'active_filetypes': [],
                                \ 'passive_filetypes': ['haml','scss','sass'] }
-
-" gundo for awesome undo tree visualization
-  Bundle "git://github.com/sjl/gundo.vim.git"
-    map <Leader>h :GundoToggle<CR>
 
 " surround for adding surround 'physics'
   Bundle "git://github.com/tpope/vim-surround.git"
