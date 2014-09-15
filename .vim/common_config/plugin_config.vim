@@ -38,7 +38,7 @@
     let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 
 " Go
-  Bundle "git@github.com:fatih/vim-go.git"
+  Bundle "git://github.com/fatih/vim-go.git"
     au BufNewFile,BufRead *.go set filetype=go
 
 " Mustache
