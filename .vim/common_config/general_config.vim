@@ -116,3 +116,6 @@
 
 " different color for each paren pairs
 let vimclojure#ParenRainbow  = 1
+
+" yank also copies to clipboard
+set clipboard=unnamed
