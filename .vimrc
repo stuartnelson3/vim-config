@@ -6,7 +6,9 @@ call vundle#rc()
 runtime! common_config/*.vim
 runtime! custom_config/*.vim
 
-color quercus
+" color quercus
+color solarized
+syntax off
 
 set cursorline
 set nohlsearch
