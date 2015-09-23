@@ -15,19 +15,22 @@ set nohlsearch
 set history=10000
 set listchars=trail:.,tab:^~
 set nolist
-set rnu
+
+" show relative line numbers
+" set rnu
+
 set nonumber
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'}]%h%m%r%y%=%c,%l/%L\ %P
 
 au FileType go,c,cpp setl ts=4 sw=4
 
 " auto resize focused window
-let &winheight = &lines * 6 / 10
-let &winwidth = &columns * 6 / 10
+" let &winheight = &lines * 6 / 10
+" let &winwidth = &columns * 6 / 10
 
 map <leader>r :ClearCtrlPCache<cr>
 " ctrl+l insert hashrocket
 imap <c-l> <space>=><space>
 
-" for git, add spell checking and automatic wrapping at 72 columns
-autocmd Filetype gitcommit setlocal spell textwidth=72
+" for git, add spell checking and automatic wrapping at 50 columns
+autocmd Filetype gitcommit setlocal spell textwidth=50
