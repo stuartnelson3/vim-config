@@ -21,7 +21,7 @@ set nolist
 set nonumber
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'}]%h%m%r%y%=%c,%l/%L\ %P
 
-au FileType go,c,cpp setl ts=4 sw=4
+au FileType go,c,cpp setl ts=8 sw=8
 
 " auto resize focused window
 " let &winheight = &lines * 6 / 10
