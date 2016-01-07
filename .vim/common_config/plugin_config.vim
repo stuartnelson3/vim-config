@@ -42,6 +42,10 @@
   Bundle "git://github.com/fatih/vim-go.git"
     au BufNewFile,BufRead *.go set filetype=go
 
+" Scala
+  Bundle "git@github.com:derekwyatt/vim-scala.git"
+    au BufNewFile,BufRead *.scala set filetype=scala
+
 " Mustache
   " Bundle "git://github.com/juvenn/mustache.vim.git"
     " Copied from the plugin; not sure why it isn't working normally
