@@ -8,7 +8,6 @@ runtime! custom_config/*.vim
 
 " color quercus
 color solarized
-syntax off
 
 set cursorline
 set nohlsearch
