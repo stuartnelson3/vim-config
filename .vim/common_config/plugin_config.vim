@@ -134,6 +134,6 @@
   " Bundle "git://github.com/digitaltoad/vim-jade.git"
   " autocmd BufNewFile,BufRead *.jade set filetype=jade
 
-" Elm is Haskell
-  " Bundle "git://github.com/lambdatoast/elm.vim"
-  " au BufRead,BufNewFile *.elm set ft=elm
+" Elm
+  Bundle "git@github.com:lambdatoast/elm.vim.git"
+  au BufRead,BufNewFile *.elm set ft=elm
