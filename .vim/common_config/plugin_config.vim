@@ -2,27 +2,21 @@
 " install plugins.
 
 " Plugins requiring no additional configuration or keymaps
-  " Bundle "git://github.com/oscarh/vimerl.git"
   Bundle "git://github.com/terryma/vim-multiple-cursors.git"
   Bundle "git://github.com/tpope/vim-git.git"
   Bundle "git://github.com/harleypig/vcscommand.vim.git"
   Bundle "git://github.com/altercation/vim-colors-solarized.git"
-  " Bundle "git://github.com/tpope/vim-cucumber.git"
-  " Bundle "git://github.com/tpope/vim-endwise.git"
-  " Bundle "git://github.com/tpope/vim-fugitive.git"
-  " Bundle "git://github.com/tpope/vim-haml.git"
+  Bundle "git://github.com/tpope/vim-cucumber.git"
+  Bundle "git://github.com/tpope/vim-fugitive.git"
   Bundle "git://github.com/pangloss/vim-javascript.git"
   Bundle "git://github.com/vim-scripts/L9.git"
-  " Bundle "git://github.com/tpope/vim-rake.git"
   Bundle "git://github.com/vim-ruby/vim-ruby.git"
   Bundle "git://github.com/ervandew/supertab.git"
   Bundle "git://github.com/tomtom/tcomment_vim.git"
   Bundle "git://github.com/michaeljsmith/vim-indent-object.git"
   Bundle "git://github.com/kana/vim-textobj-user.git"
-  " Bundle "git://github.com/nelstrom/vim-textobj-rubyblock.git"
   Bundle "git://github.com/tpope/vim-repeat.git"
   Bundle "git://github.com/vim-scripts/ruby-matchit.git"
-  " Bundle "git://github.com/wookiehangover/jshint.vim"
 
 " CtrlP - with FuzzyFinder compatible keymaps
   Bundle "git://github.com/kien/ctrlp.vim.git"
