@@ -34,3 +34,7 @@ imap <c-l> <space>=><space>
 
 " for git, add spell checking and automatic wrapping at 50 columns
 autocmd Filetype gitcommit setlocal spell textwidth=50
+
+" rust auto-format
+let g:rustfmt_autosave = 1
+

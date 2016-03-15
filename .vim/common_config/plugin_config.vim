@@ -18,6 +18,10 @@
   Bundle "git://github.com/tpope/vim-repeat.git"
   Bundle "git://github.com/vim-scripts/ruby-matchit.git"
 
+" Rust
+  Bundle "git://github.com/rust-lang/rust.vim.git"
+  au BufRead,BufNewFile *.rs set ft=rust
+
 " CtrlP - with FuzzyFinder compatible keymaps
   Bundle "git://github.com/kien/ctrlp.vim.git"
     nnoremap <Leader>b :<C-U>CtrlPBuffer<CR>
