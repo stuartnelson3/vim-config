@@ -18,6 +18,11 @@
   Bundle "git://github.com/tpope/vim-repeat.git"
   Bundle "git://github.com/vim-scripts/ruby-matchit.git"
 
+
+" Elm
+  Bundle "git://github.com/lambdatoast/elm.vim.git"
+  au BufRead,BufNewFile *.elm set ft=elm
+
 " Rust
   Bundle "git://github.com/rust-lang/rust.vim.git"
   au BufRead,BufNewFile *.rs set ft=rust
@@ -41,7 +46,7 @@
     au BufNewFile,BufRead *.go set filetype=go
 
 " Scala
-  Bundle "git@github.com:derekwyatt/vim-scala.git"
+  Bundle "git://github.com/derekwyatt/vim-scala.git"
     au BufNewFile,BufRead *.scala set filetype=scala
 
 " Mustache
@@ -131,7 +136,3 @@
 " Jade Highlighting"
   " Bundle "git://github.com/digitaltoad/vim-jade.git"
   " autocmd BufNewFile,BufRead *.jade set filetype=jade
-
-" Elm
-  Bundle "git@github.com:lambdatoast/elm.vim.git"
-  au BufRead,BufNewFile *.elm set ft=elm
