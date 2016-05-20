@@ -20,8 +20,8 @@
 
 
 " Elm
-  Bundle "git://github.com/lambdatoast/elm.vim.git"
-  au BufRead,BufNewFile *.elm set ft=elm
+  " Bundle "git://github.com/lambdatoast/elm.vim.git"
+  " au BufRead,BufNewFile *.elm set ft=elm
 
 " Rust
   Bundle "git://github.com/rust-lang/rust.vim.git"
@@ -136,3 +136,6 @@
 " Jade Highlighting"
   " Bundle "git://github.com/digitaltoad/vim-jade.git"
   " autocmd BufNewFile,BufRead *.jade set filetype=jade
+
+" .sls files are .yaml
+  autocmd BufNewFile,BufRead *.sls set filetype=yaml

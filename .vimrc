@@ -7,13 +7,17 @@ runtime! common_config/*.vim
 runtime! custom_config/*.vim
 
 " color quercus
-color solarized
+" color solarized
+color twilight
 
 set cursorline
 set nohlsearch
 set history=10000
 set listchars=trail:.,tab:^~
 set nolist
+
+" show hidden files in NERDTree
+let NERDTreeShowHidden=1
 
 " show relative line numbers
 " set rnu
@@ -36,5 +40,5 @@ imap <c-l> <space>=><space>
 autocmd Filetype gitcommit setlocal spell textwidth=50
 
 " rust auto-format
-let g:rustfmt_autosave = 1
+" let g:rustfmt_autosave = 1
 
