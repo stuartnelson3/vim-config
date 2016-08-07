@@ -71,3 +71,9 @@
 " jump to far right or left of line
   map L $
   map H ^
+
+" ,t saves and runs GoBuild
+  map ,t :w<cr> :GoBuild<cr>
+
+" ,r saves and runs GoBuild
+  map ,r :w<cr> :GoTest<cr>
