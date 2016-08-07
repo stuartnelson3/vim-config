@@ -10,7 +10,6 @@ runtime! custom_config/*.vim
 " color solarized
 color twilight
 
-set cursorline
 set nohlsearch
 set history=10000
 set listchars=trail:.,tab:^~
