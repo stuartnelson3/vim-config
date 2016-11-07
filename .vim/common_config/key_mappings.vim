@@ -77,3 +77,6 @@
 
 " ,r saves and runs GoBuild
   map ,r :w<cr> :GoTest<cr>
+
+" FZF Fuzzy finder
+  map <Leader>t :FZF<cr>
