@@ -50,15 +50,16 @@
     vmap <C-Up> [egv
     vmap <C-Down> ]egv
 
+" Syntastic kills startup time. It adds ~700ms.
 " Syntastic for catching syntax errors on save
-  Bundle "git://github.com/scrooloose/syntastic.git"
-    let g:syntastic_enable_signs=1
-    let g:syntastic_quiet_messages = {'level': 'warnings'}
-    let g:syntastic_delayed_redraws=1
-" syntastic is too slow for haml and sass
-    let g:syntastic_mode_map = { 'mode': 'active',
-                               \ 'active_filetypes': [],
-                               \ 'passive_filetypes': ['haml','scss','sass'] }
+"   Bundle "git://github.com/scrooloose/syntastic.git"
+"     let g:syntastic_enable_signs=1
+"     let g:syntastic_quiet_messages = {'level': 'warnings'}
+"     let g:syntastic_delayed_redraws=1
+" " syntastic is too slow for haml and sass
+"     let g:syntastic_mode_map = { 'mode': 'active',
+"                                \ 'active_filetypes': [],
+"                                \ 'passive_filetypes': ['haml','scss','sass'] }
 
 " surround for adding surround 'physics'
   Bundle "git://github.com/tpope/vim-surround.git"
