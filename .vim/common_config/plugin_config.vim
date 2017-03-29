@@ -3,19 +3,19 @@
 
 " Plugins requiring no additional configuration or keymaps
   Bundle "git://github.com/terryma/vim-multiple-cursors.git"
-  Bundle "git://github.com/tpope/vim-git.git"
-  Bundle "git://github.com/harleypig/vcscommand.vim.git"
+  " Bundle "git://github.com/tpope/vim-git.git"
+  " Bundle "git://github.com/harleypig/vcscommand.vim.git"
   Bundle "git://github.com/altercation/vim-colors-solarized.git"
   Bundle "git://github.com/tpope/vim-fugitive.git"
-  Bundle "git://github.com/pangloss/vim-javascript.git"
+  " Bundle "git://github.com/pangloss/vim-javascript.git"
   Bundle "git://github.com/vim-scripts/L9.git"
-  Bundle "git://github.com/vim-ruby/vim-ruby.git"
+  " Bundle "git://github.com/vim-ruby/vim-ruby.git"
   Bundle "git://github.com/ervandew/supertab.git"
   Bundle "git://github.com/tomtom/tcomment_vim.git"
   Bundle "git://github.com/michaeljsmith/vim-indent-object.git"
   Bundle "git://github.com/kana/vim-textobj-user.git"
   Bundle "git://github.com/tpope/vim-repeat.git"
-  Bundle "git://github.com/vim-scripts/ruby-matchit.git"
+  " Bundle "git://github.com/vim-scripts/ruby-matchit.git"
 
 
 " Elm
@@ -41,14 +41,14 @@
     nmap g :NERDTree \| NERDTreeToggle \| NERDTreeFind<CR>
 
 " Unimpaired for keymaps for quicky manipulating lines and files
-  Bundle "git://github.com/tpope/vim-unimpaired.git"
-    " Bubble single lines
-    nmap <C-Up> [e
-    nmap <C-Down> ]e
-
-    " Bubble multiple lines
-    vmap <C-Up> [egv
-    vmap <C-Down> ]egv
+  " Bundle "git://github.com/tpope/vim-unimpaired.git"
+  "   " Bubble single lines
+  "   nmap <C-Up> [e
+  "   nmap <C-Down> ]e
+  "
+  "   " Bubble multiple lines
+  "   vmap <C-Up> [egv
+  "   vmap <C-Down> ]egv
 
 " Syntastic kills startup time. It adds ~700ms.
 " Syntastic for catching syntax errors on save
