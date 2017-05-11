@@ -118,4 +118,8 @@
 let vimclojure#ParenRainbow  = 1
 
 " yank also copies to clipboard
-set clipboard=unnamed
+" unnamedplus copies to ^C clipboard for linux systems, unnamed for macOS. See
+" the extremely helpful
+" https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
+" for details, or check out :help 'clipboard'
+set clipboard=unnamedplus
