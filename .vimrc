@@ -9,8 +9,9 @@ runtime! common_config/*.vim
 runtime! custom_config/*.vim
 
 " color quercus
-color solarized
+" color solarized
 " color twilight
+color default
 
 set nohlsearch
 set history=10000
