@@ -3,8 +3,6 @@ set rtp+=~/vimfiles/vundle.git/
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
-let g:elm_format_autosave = 1
-
 runtime! common_config/*.vim
 runtime! custom_config/*.vim
 
@@ -24,11 +22,22 @@ let NERDTreeShowHidden=1
 " show relative line numbers
 " set rnu
 
+" Use .vimlocal to override .vimrc settings. If .vimlocal doesn't exist, don't
+" output a warning.
+" http://vim.wikia.com/wiki/Project_specific_settings
+silent! so .vimlocal
+
+" Disable default elm-vim key bindings. I really only want to disable
+" <Leader>t since it hijacks fzf.
+let g:elm_setup_keybindings = 0
+let g:elm_format_autosave = 1
+
 set nonumber
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'}]%h%m%r%y%=%c,%l/%L\ %P
 
 au FileType go,c,cpp setl ts=8 sw=8
 au FileType objc,elm setl ts=4 sw=4
+au FileType yaml setl sts=2
 
 " ctrl+l insert hashrocket
 imap <c-l> <space>=><space>
