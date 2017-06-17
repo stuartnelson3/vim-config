@@ -11,11 +11,6 @@
   Bundle "git://github.com/michaeljsmith/vim-indent-object.git"
   Bundle "git://github.com/kana/vim-textobj-user.git"
   Bundle "git://github.com/tpope/vim-repeat.git"
-  " Bundle "git://github.com/vim-scripts/ruby-matchit.git"
-  " Bundle "git://github.com/tpope/vim-git.git"
-  " Bundle "git://github.com/harleypig/vcscommand.vim.git"
-  " Bundle "git://github.com/pangloss/vim-javascript.git"
-  " Bundle "git://github.com/vim-ruby/vim-ruby.git"
 
 
 " Elm
