@@ -3,7 +3,6 @@
 
 " Plugins requiring no additional configuration or keymaps
   Bundle "git://github.com/terryma/vim-multiple-cursors.git"
-  Bundle "git@github.com:leafgarland/typescript-vim.git"
   Bundle "git://github.com/altercation/vim-colors-solarized.git"
   Bundle "git://github.com/tpope/vim-fugitive.git"
   Bundle "git://github.com/vim-scripts/L9.git"
