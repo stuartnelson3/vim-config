@@ -32,6 +32,8 @@ silent! so .vimlocal
 let g:elm_setup_keybindings = 0
 let g:elm_format_autosave = 1
 
+let g:rustfmt_autosave = 1
+
 set nonumber
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'}]%h%m%r%y%=%c,%l/%L\ %P
 
