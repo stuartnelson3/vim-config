@@ -11,7 +11,11 @@
   Bundle "git://github.com/michaeljsmith/vim-indent-object.git"
   Bundle "git://github.com/kana/vim-textobj-user.git"
   Bundle "git://github.com/tpope/vim-repeat.git"
+
+" Rust
   Bundle "git://github.com/rust-lang/rust.vim"
+  Bundle "git://github.com/racer-rust/vim-racer"
+  au FileType rust nmap gd <Plug>(rust-def)
 
 " Elm
   Bundle "git://github.com/ElmCast/elm-vim.git"

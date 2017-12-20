@@ -44,5 +44,9 @@ au FileType yaml setl sts=2
 " ctrl+l insert hashrocket
 imap <c-l> <space>=><space>
 
+" rust racer
+set hidden
+let g:racer_cmd = "racer"
+
 " for git, add spell checking and automatic wrapping at 50 columns
 autocmd Filetype gitcommit setlocal spell textwidth=50
