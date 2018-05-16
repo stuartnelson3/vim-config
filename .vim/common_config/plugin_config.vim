@@ -11,6 +11,7 @@
   Bundle "git://github.com/michaeljsmith/vim-indent-object.git"
   Bundle "git://github.com/kana/vim-textobj-user.git"
   Bundle "git://github.com/tpope/vim-repeat.git"
+  Bundle "git://github.com/hashivim/vim-terraform.git"
 
 " Rust
   Bundle "git://github.com/rust-lang/rust.vim"
