@@ -47,7 +47,8 @@ imap <c-l> <space>=><space>
 
 " rust racer
 set hidden
-let g:racer_cmd = "racer"
+let g:racer_cmd = "/home/stuart/.cargo/bin/racer"
+au FileType rust nmap gd <Plug>(rust-def)
 
 " for git, add spell checking and automatic wrapping at 50 columns
 autocmd Filetype gitcommit setlocal spell textwidth=50

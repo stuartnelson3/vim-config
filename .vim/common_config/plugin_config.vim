@@ -16,7 +16,6 @@
 " Rust
   Bundle "git://github.com/rust-lang/rust.vim"
   Bundle "git://github.com/racer-rust/vim-racer"
-  au FileType rust nmap gd <Plug>(rust-def)
 
 " Elm
   Bundle "git://github.com/ElmCast/elm-vim.git"
