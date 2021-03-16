@@ -51,6 +51,7 @@ set statusline+=%3*\ %{strftime('%R',getftime(expand('%')))}
 set statusline+=%3*\ ::
 set statusline+=%3*\ %n
 set statusline+=%3*\ ››\ %*
+let NERDTreeStatusline='%{exists("b:NERDTreeRoot")?b:NERDTreeRoot.path.str():""}'
 
 hi User1 guifg=#FFFFFF guibg=#191f26 gui=BOLD
 hi User2 guifg=#000000 guibg=#959ca6
