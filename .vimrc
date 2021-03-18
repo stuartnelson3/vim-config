@@ -39,23 +39,12 @@ set nonumber
 " set statusline=%n[%{strlen(&fenc)?&fenc:'none'}]%h%m%r%y%=%c,%l/%L\ %P
 set laststatus=2
 set statusline=
-set statusline+=%2*\ %l
-set statusline+=\ %*
-set statusline+=%1*\ ‹‹
-set statusline+=%3*\ %F
-set statusline+=%1*\ ››
-set statusline+=%1*\ %m
+set statusline+=ln:
+set statusline+=%l
 set statusline+=%=
-set statusline+=%3*\ ‹‹
-set statusline+=%3*\ %{strftime('%R',getftime(expand('%')))}
-set statusline+=%3*\ ::
-set statusline+=%3*\ %n
-set statusline+=%3*\ ››\ %*
-let NERDTreeStatusline='%{exists("b:NERDTreeRoot")?b:NERDTreeRoot.path.str():""}'
+set statusline+=\ %F
 
-hi User1 guifg=#FFFFFF guibg=#191f26 gui=BOLD
-hi User2 guifg=#000000 guibg=#959ca6
-hi User3 guifg=#000000 guibg=#4cbf99
+let NERDTreeStatusline='%{exists("b:NERDTreeRoot")?b:NERDTreeRoot.path.str():""}'
 
 au FileType go,c,cpp setl ts=8 sw=8
 au FileType objc,elm setl ts=4 sw=4
