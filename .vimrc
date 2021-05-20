@@ -6,15 +6,17 @@ call vundle#rc()
 runtime! common_config/*.vim
 runtime! custom_config/*.vim
 
-" color quercus
-" color solarized
 " color twilight
-color default
+" color molokai
+" color default
+color candy
 
 set nohlsearch
 set history=10000
 set listchars=trail:.,tab:^~
 set nolist
+" load file changes automatically
+set autoread
 
 " show hidden files in NERDTree
 let NERDTreeShowHidden=1
