@@ -39,10 +39,12 @@ set nonumber
 " set statusline=%n[%{strlen(&fenc)?&fenc:'none'}]%h%m%r%y%=%c,%l/%L\ %P
 set laststatus=2
 set statusline=
-set statusline+=ln:
-set statusline+=%l
+set statusline+=%F
 set statusline+=%=
-set statusline+=\ %F
+set statusline+=\ ln:
+set statusline+=%l
+" set statusline+=%l/%L
+" set statusline+=\ %F
 
 let NERDTreeStatusline='%{exists("b:NERDTreeRoot")?b:NERDTreeRoot.path.str():""}'
 
