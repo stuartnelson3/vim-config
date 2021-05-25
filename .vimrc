@@ -54,6 +54,8 @@ au FileType go,c,cpp setl ts=8 sw=8
 au FileType objc,elm setl ts=4 sw=4
 au FileType yaml setl sts=2
 
+autocmd FileType c setlocal commentstring=//\ %s
+
 " ctrl+l insert hashrocket
 imap <c-l> <space>=><space>
 
